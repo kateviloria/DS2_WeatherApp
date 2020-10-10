@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ontology name="WeatherOntology">
+
+    <predicate name="city_to_search" sort="city"/>
+
+    <sort name="city" dynamic="true"/> 
+    <individual name="city_gothenburg" sort="city"/>
+    <individual name="city_toronto" sort="city"/>
+    <individual name="city_paris" sort="city"/>
+
+    <predicate name="country_to_search" sort="country"/>
+
+    <sort name="country" dynamic="true"/>
+    <individual name="country_sweden" sort="country"/>
+    <individual name="country_canada" sort="country"/>
+    <individual name="country_france" sort="country"/>
+
+    <predicate name="temperature" sort="string"/>
+    <predicate name="weather" sort="string"/>
+
+</ontology>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <individual name="city_gothenburg">
+    <one-of>
+      <item>Gothenburg</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_toronto">
+    <one-of>
+      <item>Toronto</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_paris">
+    <one-of>
+      <item>Paris</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_sweden">
+    <one-of>
+      <item>Sweden</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_canada">
+    <one-of>
+      <item>Canada</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_france">
+    <one-of>
+      <item>France</item>
+    </one-of>
+  </individual>
+
+  <question speaker="system" type="goal">What would you like to do</question>
+
+  <question speaker="system" predicate="city_to_search" type="wh_question">What city</question>
+
+  <question speaker="system" predicate="country_to_search" type="wh_question">What country</question>
+
+  <answer speaker="system" predicate="temperature">The temperature in <slot predicate="city_to_search"/>is <slot predicate="temperature" type="individual"/>celsius.</answer>
+
+  <answer speaker="system" predicate="weather"><slot predicate="weather" type="individual"/>in <slot predicate="city_to_search"/></answer>
+
+  <question speaker="user" predicate="temperature" type="wh_question">
+    <one-of>
+      <item>What is the temperature</item>
+      <item>What's the temperature</item>
+      <item>I want to know the temperature</item>
+      <item>Can I look up a temperature</item>
+    </one-of>
+  </question>
+
+</grammar>
