@@ -1,8 +1,7 @@
 --- main menu
-S> What would you like to do?
+S> Do you want to know about the temperature or the current weather?
 
--- temperature
-S> What would you like to do?
+--- temperature (incremental)
 U> what is the temperature
 S> What city?
 U> paris
@@ -10,11 +9,11 @@ S> What country?
 U> france
 S> The temperature is *
  
--- weather 
+--- weather (incremental)
 S> What would you like to do?
 U> check the weather
 S> Which city?
 U> gothenburg
 S> What country?
 U> sweden
-S> Overcast clouds in Gothenburg.
+S> The weather is overcast clouds.

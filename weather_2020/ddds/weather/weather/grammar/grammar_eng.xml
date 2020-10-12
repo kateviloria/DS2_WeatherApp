@@ -58,15 +58,15 @@
     </one-of>
   </individual>
 
-  <question speaker="system" type="goal">What would you like to do</question>
+  <question speaker="system" type="goal">Do you want to know about the temperature or the current weather</question>
 
   <question speaker="system" predicate="city_to_search" type="wh_question">What city</question>
 
   <question speaker="system" predicate="country_to_search" type="wh_question">What country</question>
 
-  <answer speaker="system" predicate="temperature">The temperature in <slot predicate="city_to_search"/>is <slot predicate="temperature" type="individual"/>celsius.</answer>
+  <answer speaker="system" predicate="temperature">The temperature is<slot predicate="temperature" type="individual"/>.</answer>
 
-  <answer speaker="system" predicate="weather"><slot predicate="weather" type="individual"/>in <slot predicate="city_to_search"/></answer>
+  <answer speaker="system" predicate="weather">The weather is<slot predicate="weather" type="individual"/>.</answer>
 
   <question speaker="user" predicate="temperature" type="wh_question">
     <one-of>
@@ -74,6 +74,14 @@
       <item>What's the temperature</item>
       <item>I want to know the temperature</item>
       <item>Can I look up a temperature</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="weather" type="wh_question">
+    <one-of>
+      <item>Check the weather</item>
+      <item>What is the weather</item>
+      <item>I want to know the weather</item>
     </one-of>
   </question>
 
