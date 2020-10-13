@@ -85,4 +85,8 @@
     </one-of>
   </question>
 
+  <question type="wh_question" speaker="all" predicate="weather">the weather</question>
+
+  <question type="wh_question" speaker="all" predicate="temperature">the temperature</question>
+
 </grammar>

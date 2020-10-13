@@ -1,5 +1,5 @@
 --- main menu
-S> Do you want to know about the temperature or the current weather?
+S> What would you like to do?
 
 --- temperature (incremental)
 U> what is the temperature
@@ -12,7 +12,7 @@ S> The temperature is *
 --- weather (incremental)
 S> What would you like to do?
 U> check the weather
-S> Which city?
+S> What city?
 U> gothenburg
 S> What country?
 U> sweden
