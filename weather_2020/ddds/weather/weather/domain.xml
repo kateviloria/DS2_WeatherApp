@@ -8,6 +8,7 @@
       <findout type="alt_question">
         <alt>
             <resolve type="wh_question" predicate="temperature"/>
+
         </alt>
         <alt>
             <resolve type="wh_question" predicate="weather"/>
@@ -20,6 +21,7 @@
     <plan>
       <findout type="wh_question" predicate="city_to_search"/>
       <findout type="wh_question" predicate="country_to_search"/>
+      <bind type="wh_question" predicate="unit_format"/>
       <invoke_service_query type="wh_question" predicate="temperature"/>
     </plan>
   </goal>

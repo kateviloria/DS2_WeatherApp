@@ -4,16 +4,34 @@ S> What would you like to do?
 --- temperature (incremental)
 U> what is the temperature
 S> What city?
-U> paris
+U> the city is paris
 S> What country?
-U> france
+U> the country is france
 S> The temperature is *
  
 --- weather (incremental)
 S> What would you like to do?
 U> check the weather
 S> What city?
-U> gothenburg
+U> the city is gothenburg
 S> What country?
-U> sweden
-S> The weather is overcast clouds.
+U> the country is sweden
+S> The weather is *
+
+--- temperature (one-shot)
+S> What would you like to do?
+U> what is the temperature in toronto in canada
+S> the temperature is *
+
+--- weather (one-shot)
+S> What would you like to do?
+U> what is the weather in paris in france
+S> The weather is *
+
+--- temperature with celsius
+U> what is the temperature in paris in france in celsius
+S> the temperature is *
+
+--- temperature with fahrenheit
+U> what is the temperature in paris in france in fahrenheit
+S> the temperature is *

@@ -9,6 +9,13 @@
     <individual name="city_toronto" sort="city"/>
     <individual name="city_paris" sort="city"/>
 
+    <individual name="city_tokyo" sort="city"/>
+    <individual name="city_lima" sort="city"/>
+    <individual name="city_cairo" sort="city"/>
+    <individual name="city_manila" sort="city"/>
+    <individual name="city_guadalajara" sort="city"/>
+
+
     <predicate name="country_to_search" sort="country"/>
 
     <sort name="country" dynamic="true"/>
@@ -16,7 +23,20 @@
     <individual name="country_canada" sort="country"/>
     <individual name="country_france" sort="country"/>
 
+    <individual name="country_japan" sort="country"/>
+    <individual name="country_peru" sort="country"/>
+    <individual name="country_egypt" sort="country"/>
+    <individual name="country_philippines" sort="country"/>
+    <individual name="country_mexico" sort="country"/>
+
     <predicate name="temperature" sort="string"/>
     <predicate name="weather" sort="string"/>
+
+    <predicate name="unit_format" sort="measurement"/>
+
+    <sort name="measurement"/>
+    <individual name="imperial" sort="measurement"/>
+    <individual name="metric" sort="measurement"/>
+    <individual name="standard" sort="measurement"/>
 
 </ontology>

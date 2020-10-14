@@ -25,40 +25,48 @@
   <individual name="city_gothenburg">
     <one-of>
       <item>Gothenburg</item>
+      <item>gothenburg</item>
+      <item>Gothenburg city</item>
     </one-of>
   </individual>
 
   <individual name="city_toronto">
     <one-of>
       <item>Toronto</item>
+      <item>toronto</item>
+      <item>city of Toronto</item>
     </one-of>
   </individual>
 
   <individual name="city_paris">
     <one-of>
       <item>Paris</item>
+      <item>paris</item>
     </one-of>
   </individual>
 
   <individual name="country_sweden">
     <one-of>
       <item>Sweden</item>
+      <item>sweden</item>
     </one-of>
   </individual>
 
   <individual name="country_canada">
     <one-of>
       <item>Canada</item>
+      <item>canada</item>
     </one-of>
   </individual>
 
   <individual name="country_france">
     <one-of>
       <item>France</item>
+      <item>france</item>
     </one-of>
   </individual>
 
-  <question speaker="system" type="goal">Do you want to know about the temperature or the current weather</question>
+  <question speaker="system" type="goal">What would you like to do?</question>
 
   <question speaker="system" predicate="city_to_search" type="wh_question">What city</question>
 
@@ -71,22 +79,154 @@
   <question speaker="user" predicate="temperature" type="wh_question">
     <one-of>
       <item>What is the temperature</item>
+      <item>what is the temperature in <slot predicate="city_to_search"/> in <slot predicate="country_to_search"/></item>
+      <item>what is the temperature in <slot predicate="city_to_search"/> in <slot predicate="country_to_search"/> in <slot predicate="unit_format"/></item>
+      <item>what is the temperature in <slot predicate="unit_format"/></item>
       <item>What's the temperature</item>
-      <item>I want to know the temperature</item>
-      <item>Can I look up a temperature</item>
+      <item>I want to know the temperature of a city</item>
+      <item>look up a temperature somewhere</item>
+      <item>what is the temperature in <slot predicate="city_to_search"/></item>
+      <item>the temperature in <slot predicate="city_to_search"/></item>
+      <item>show me the temperature of a city</item>
+      <item>temperature in <slot predicate="city_to_search"/> in <slot predicate="country_to_search"/></item>
+      <item>how cold is it outside</item>
+      <item>how warm is it outside</item>
+      <item>check the temperature</item>
+      <item>temperature in <slot predicate="city_to_search"/> <slot predicate="country_to_search"/></item>
     </one-of>
   </question>
 
   <question speaker="user" predicate="weather" type="wh_question">
     <one-of>
       <item>Check the weather</item>
+      <item>what is the weather in <slot predicate="city_to_search"/> in <slot predicate="country_to_search"/></item>
       <item>What is the weather</item>
       <item>I want to know the weather</item>
+      <item>what is the weather in <slot predicate="city_to_search"/></item>
+      <item>what is the weather like in <slot predicate="city_to_search"/></item>
+      <item>how's the weather in <slot predicate="city_to_search"/></item>
+      <item>what's it like right now in <slot predicate="city_to_search"/></item>
+      <item>i'd like to know the weather in <slot predicate="city_to_search"/> in <slot predicate="country_to_search"/></item>
+      <item>what the weather be like in <slot predicate="city_to_search"/></item>
+      <item>I want to know the weather forecast</item>
+      <item>how's the weather in <slot predicate="city_to_search"/></item>
+      <item>weather in <slot predicate="city_to_search"/> in <slot predicate="country_to_search"/></item>
+      <item>how is it outside</item>
+      <item>weather in <slot predicate="city_to_search"/> <slot predicate="country_to_search"/></item>
     </one-of>
   </question>
+
+  <answer speaker="user">
+    <one-of>
+      <item>the city is <slot predicate="city_to_search" type="individual"/></item>
+      <item>the country is <slot predicate="country_to_search" type="individual"/></item>
+    </one-of>
+  </answer>
 
   <question type="wh_question" speaker="all" predicate="weather">the weather</question>
 
   <question type="wh_question" speaker="all" predicate="temperature">the temperature</question>
+
+  <question speaker="system" predicate="unit_format" type="wh_question">In which unit</question>
+
+  <individual name="imperial">
+    <one-of>
+      <item>fahrenheit</item>
+      <item>imperial</item>
+    </one-of>
+  </individual>
+
+  <individual name="metric">
+    <one-of>
+      <item>celsius</item>
+      <item>metric</item>
+    </one-of>
+  </individual>
+
+  <individual name="standard">
+    <one-of>
+      <item>kelvin</item>
+      <item>standard</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_tokyo">
+    <one-of>
+      <item>Tokyo</item>
+      <item>tokyo</item>
+      <item>tokyo city</item>
+      <item>city of tokyo</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_lima">
+    <one-of>
+      <item>Lima</item>
+      <item>lima</item>
+      <item>lima city</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_cairo">
+    <one-of>
+      <item>Cairo</item>
+      <item>cairo</item>
+      <item>city of cairo</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_manila">
+    <one-of>
+      <item>Manila</item>
+      <item>manila</item>
+      <item>manila city</item>
+      <item>city of manila</item>
+    </one-of>
+  </individual>
+
+  <individual name="city_guadalajara">
+    <one-of>
+      <item>Guadalajara</item>
+      <item>guadalajara</item>
+      <item>guadalajara city</item>
+      <item>city of guadalajara</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_japan">
+    <one-of>
+      <item>Japan</item>
+      <item>japan</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_peru">
+    <one-of>
+      <item>Peru</item>
+      <item>peru</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_egypt">
+    <one-of>
+      <item>Egypt</item>
+      <item>egypt</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_philippines">
+    <one-of>
+      <item>Philippines</item>
+      <item>philippines</item>
+      <item>pilipinas</item>
+    </one-of>
+  </individual>
+
+  <individual name="country_Mexico">
+    <one-of>
+      <item>Mexico</item>
+      <item>mexico</item>
+    </one-of>
+  </individual>
 
 </grammar>
