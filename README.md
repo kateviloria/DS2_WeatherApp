@@ -1,1 +1,5 @@
-# DS2_WeatherApp
+## Lab 3: Building a Simple TDM APP - Weather Queries
+#### Kate Viloria  
+
+This lab had great step-by-step instructions. In the previous lab, I started with the ontology and the rest of the xml files and did http_service.py and service_interface files last. This time, I started with exploring the API just in a jupyter notebook and I found this extremely useful and gave me a better idea of how I will organise and access all the information I need for the program in http_service.py. I ran into a lot of different kinds of errors within my py file and mostly in my grammar. Although some errors given were quite useful (especially the ones that involve having to add a grammar entry for something that appears in the ontology), I found that some grammar-related errors and service interface/http_service.py errors were not very helpful and I basically relied on the TA's or my peers to help me figure out the errors. Maybe in the future, it would be useful to have a file somewhere of common errors, what they mean, and what to look for in order to solve the errors. The server problems were very disruptive in our workflow but this was out of anyone's control. I think the format of this lab would have been great for the previous lab as well. Overall, I enjoyed working on this lab!
+
