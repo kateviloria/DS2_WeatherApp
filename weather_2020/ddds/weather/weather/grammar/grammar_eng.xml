@@ -222,7 +222,7 @@
     </one-of>
   </individual>
 
-  <individual name="country_Mexico">
+  <individual name="country_mexico">
     <one-of>
       <item>Mexico</item>
       <item>mexico</item>

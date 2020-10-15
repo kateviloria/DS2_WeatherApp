@@ -21,7 +21,7 @@ S> The weather is *
 --- temperature (one-shot)
 S> What would you like to do?
 U> what is the temperature in toronto in canada
-S> the temperature is *
+S> The temperature is *
 
 --- weather (one-shot)
 S> What would you like to do?
@@ -30,8 +30,33 @@ S> The weather is *
 
 --- temperature with celsius
 U> what is the temperature in paris in france in celsius
-S> the temperature is *
+S> The temperature is *
 
 --- temperature with fahrenheit
 U> what is the temperature in paris in france in fahrenheit
-S> the temperature is *
+S> The temperature is *
+
+--- weather please, country misspelled
+U> I want to know the weather please
+S> What city?
+U> the city is tokyo
+S> What country?
+U> the contry is japan
+S> The weather is *
+
+--- temperature misspelled
+U> I want to know the temparature of a city
+S> What city?
+U> the city is cairo
+S> What country?
+U> the country is egypt
+S> The temperature is *
+
+--- thanks
+S> What would you like to do?
+U> check the weather
+S> What city?
+U> Guadalajara
+S> What country?
+U> the country is Mexico thanks
+S> The weather is *
