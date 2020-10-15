@@ -93,6 +93,8 @@
       <item>how warm is it outside</item>
       <item>check the temperature</item>
       <item>temperature in <slot predicate="city_to_search"/> <slot predicate="country_to_search"/></item>
+      <item>check the temperature</item>
+      <item>I want to know the temprature of a city</item>
     </one-of>
   </question>
 
@@ -113,6 +115,8 @@
       <item>weather in <slot predicate="city_to_search"/> in <slot predicate="country_to_search"/></item>
       <item>how is it outside</item>
       <item>weather in <slot predicate="city_to_search"/> <slot predicate="country_to_search"/></item>
+      <item>check the wether</item>
+      <item>what is the whether</item>
     </one-of>
   </question>
 
