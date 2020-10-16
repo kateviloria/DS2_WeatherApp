@@ -36,27 +36,44 @@ S> The temperature is *
 U> what is the temperature in paris in france in fahrenheit
 S> The temperature is *
 
---- weather please, country misspelled
+--- weather please
 U> I want to know the weather please
 S> What city?
 U> the city is tokyo
 S> What country?
-U> the contry is japan
+U> the country is japan
 S> The weather is *
 
+--- check temperature please
+S> What would you like to do?
+U> I want to know the temperature of a city please
+S> What city?
+U> the city is lima
+S> What country?
+U> the country is peru
+S> The temperature is *
+
 --- temperature misspelled
-U> I want to know the temparature of a city
+U> I want to know the temprature of a city
 S> What city?
 U> the city is cairo
 S> What country?
 U> the country is egypt
 S> The temperature is *
 
---- thanks
+--- weather misspelled
 S> What would you like to do?
-U> check the weather
+U> what is the whether
 S> What city?
 U> Guadalajara
 S> What country?
-U> the country is Mexico thanks
+U> the country is Mexico 
+S> The weather is *
+
+--- unknown city
+U> how is it outside
+S> What city?
+U> the city is osaka
+S> What country?
+U> the country is japan
 S> The weather is *
