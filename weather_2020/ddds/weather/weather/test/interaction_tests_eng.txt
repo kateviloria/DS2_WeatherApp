@@ -44,6 +44,15 @@ S> What country?
 U> the country is japan
 S> The weather is *
 
+--- weather thanks
+S> What would you like to do?
+U> check the weather thanks
+S> What city?
+U> the city is tokyo
+S> What country?
+U> the country is japan
+S> The weather is *
+
 --- check temperature please
 S> What would you like to do?
 U> I want to know the temperature of a city please
@@ -61,13 +70,30 @@ S> What country?
 U> the country is egypt
 S> The temperature is *
 
+--- temperature misspelled again
+U> I want to know the temparature of a city
+S> What city?
+U> the city is cairo
+S> What country?
+U> the country is egypt
+S> The temperature is *
+
 --- weather misspelled
 S> What would you like to do?
-U> what is the whether
+U> what is the weether
 S> What city?
 U> Guadalajara
 S> What country?
 U> the country is Mexico 
+S> The weather is *
+
+--- country misspelled 
+S> What would you like to do?
+U> what is the weather
+S> What city?
+U> Guadalajara
+S> What country?
+U> the contry is Mexico 
 S> The weather is *
 
 --- unknown city
@@ -76,4 +102,12 @@ S> What city?
 U> the city is osaka
 S> What country?
 U> the country is japan
+S> The weather is *
+
+--- unknown city and country
+U> how is it outside
+S> What city?
+U> the city is madrid
+S> What country?
+U> the country is spain
 S> The weather is *
